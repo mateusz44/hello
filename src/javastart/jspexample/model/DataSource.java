@@ -7,6 +7,7 @@ public class DataSource {
     private HashMap<String, String> userSource;
  
     public DataSource() {
+    	MysqlConnection mysql = new MysqlConnection();
         userSource = new HashMap<String, String>();
         generateTestData();
     }
@@ -17,7 +18,6 @@ public class DataSource {
     public void register(String name, String password) {
         System.out.println(name+":uuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuu "+password);
         userSource.put(name, password);
-
     }
  
     public boolean userExists(User user) {

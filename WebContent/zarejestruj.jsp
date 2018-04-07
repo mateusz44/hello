@@ -33,5 +33,14 @@
     	   out.println("<li>"+str);
        %>
  ${param.country}
+          <select name="country">
+        <option>poslka</option>
+        <option>Czechy</option>
+        <option>Irlandia</option>
+        <option>Moldawia</option>
+        </select>
+               <input type="checkbox" name ="newsletter" value="newsletter" /> newsletter
+        <input type="checkbox" name ="newsletter" value="marketingoffer" /> marketing offer
+        <input type="checkbox" name ="newsletter" value="specialoffer" /> special offer
 </body>
 </html>
